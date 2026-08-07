@@ -1,0 +1,41 @@
+{
+  "version": "2026-08-07.2",
+  "basis": "annual_seafood_average_plus_used_service_fees",
+  "thresholds": {
+    "highPercent": 20,
+    "highInclusive": true,
+    "lowPercent": -20,
+    "lowInclusive": false
+  },
+  "fairFees": {
+    "preparation": { "mode": "perUnit", "won": 5000 },
+    "packaging": { "mode": "perOrder", "won": 1000 },
+    "table": { "mode": "perOrder", "won": 5000 }
+  },
+  "messages": {
+    "ko": {
+      "safe": "서버 적정 총액과 비슷한 가격이에요. 안심하고 거래해도 좋아요.",
+      "low": "서버 적정 총액보다 20%를 초과해 낮아요. 중량·원산지·상품 상태와 누락된 비용을 확인하세요.",
+      "caution": "서버 적정 총액보다 다소 높지만 20% 미만이에요. 포함된 비용을 확인하세요.",
+      "danger": "서버 적정 총액보다 20% 이상 높아요. 바가지가 의심되니 결제 전에 다른 점포와 비교하세요."
+    },
+    "en": {
+      "safe": "This price is close to the server reference total. You can proceed with confidence.",
+      "low": "This price is more than 20% below the server reference total. Check the weight, origin, product condition, and any missing fees.",
+      "caution": "This price is above the server reference total but by less than 20%. Check the included fees.",
+      "danger": "This price is at least 20% above the server reference total. It may be overpriced, so compare another store before paying."
+    },
+    "zh": {
+      "safe": "该价格接近服务器参考合理总价，可以放心交易。",
+      "low": "该价格低于服务器参考合理总价，差幅超过20%，请确认重量、产地、商品状态及是否遗漏费用。",
+      "caution": "该价格高于服务器参考合理总价，但未达到20%，请确认所含费用。",
+      "danger": "该价格比服务器参考合理总价高20%以上，疑似收费过高，请在付款前比较其他店铺。"
+    },
+    "ja": {
+      "safe": "サーバー基準の適正合計に近い価格です。安心して取引できます。",
+      "low": "サーバー基準の適正合計より20%を超えて安い価格です。重量・産地・商品の状態・不足している費用を確認してください。",
+      "caution": "サーバー基準の適正合計より高めですが20%未満です。含まれる費用を確認してください。",
+      "danger": "サーバー基準の適正合計より20%以上高い価格です。割高の可能性があるため、支払い前に他店と比較してください。"
+    }
+  }
+}
